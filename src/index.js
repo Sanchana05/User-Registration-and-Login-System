@@ -9,8 +9,6 @@ const mongoose = require("mongoose");
 const app = express();
 
 
-
-
 app.set('view engine', 'ejs');
 
 app.use(express.json());
@@ -25,8 +23,6 @@ app.get("/register", (req, res) => {
 app.get("/login", (req, res) => {
     res.render("login");  
 });
-
-
 
 
 

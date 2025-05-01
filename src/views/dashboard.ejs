@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <div class="container mx-auto p-8 text-center">
-        <p class="text-2xl font-semibold mb-4">WELCOME PPL</p>
-        <p class="text-lg text-gray-600">Made by Sanchana</p>
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-2xl p-8 max-w-md w-full">
+      <h1 class="text-3xl font-bold mb-4 text-center">
+        Welcome, <span class="text-indigo-600"><%= user.username %></span>!
+      </h1>
+      <p class="text-lg text-gray-600 mb-6 text-center">
+        Your email: <span class="font-medium"><%= user.email %></span>
+      </p>
+      
+      <p class="mt-6 text-sm text-gray-400 text-center">
+        Made by Sanchana
+      </p>
     </div>
+  </div>
 </body>
 </html>
